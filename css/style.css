@@ -32,8 +32,12 @@ img {
 
 @media (max-width: 767px) {
   .inner {
-    padding: 0 15px;
+    padding: 5px 20px;
   }
+}
+
+.mb-10 {
+  margin-bottom: 10px;
 }
 
 /*=================================================================
@@ -53,7 +57,7 @@ img {
 }
 
 .header .drawer-hamburger-icon {
-  background: #3ea1d1;
+  background: #81d5ff;
 }
 
 .drawer-open .header .drawer-hamburger-icon {
@@ -62,7 +66,7 @@ img {
 
 .header .drawer-hamburger-icon::before,
 .header .drawer-hamburger-icon::after {
-  background: #3ea1d1;
+  background: #81d5ff;
 }
 
 .header-inner {
@@ -91,7 +95,7 @@ img {
 @media (max-width: 767px) {
   .header-nav {
     top: 60px;
-    background: #3ea1d1;
+    background: #81d5ff;
     padding: 24px 0;
   }
 }
@@ -124,7 +128,7 @@ img {
     transition: color 0.3s ease 0s;
   }
   .header-nav-item-link:hover {
-    color: #3ea1d1;
+    color: #81d5ff;
   }
 }
 
@@ -156,12 +160,12 @@ img {
 # section common
 =================================================================*/
 .section {
-  margin-top: 160px;
+  /* margin-top: 160px; */
 }
 
 @media (max-width: 767px) {
   .section {
-    margin-top: 30px;
+    /* margin-top: 30px; */
   }
 }
 
@@ -173,6 +177,7 @@ img {
   font-weight: bold;
   text-align: center;
   line-height: 1;
+  color: rgb(35, 32, 32);
 }
 
 @media (max-width: 767px) {
@@ -181,20 +186,21 @@ img {
   }
 }
 
+/* 背景が入った際、水色棒は白に変更 */
 .util-title::after {
   content: '';
   display: block;
   height: 1px;
   width: 60px;
-  background: #3ea1d1;
+  background: #81d5ff;
   margin: 16px auto 0;
 }
 
 .util-link {
   font-size: 14px;
   letter-spacing: 0.1em;
-  color: #3ea1d1;
-  border: 1px solid #3ea1d1;
+  color: #81d5ff;
+  border: 1px solid #81d5ff;
   background: #fff;
   display: inline-block;
   padding: 10px 54px;
@@ -203,13 +209,13 @@ img {
 }
 
 .util-link.-active {
-  background-color: #3ea1d1;
+  background-color: #81d5ff;
   color: #fff;
 }
 
 @media (min-width: 768px) {
   .util-link:not(.-submit):hover {
-    background-color: #3ea1d1;
+    background-color: #81d5ff;
     color: #fff;
   }
 }
@@ -327,6 +333,32 @@ img {
 /*=================================================================
 # feature
 =================================================================*/
+#feature {
+  background:url(/img/suqute/bg1.png);
+  min-height: 100vh;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  transition: all 0.5s ease 0s;
+}
+
+/* ★nth-chile まとめ方調べる*/
+.bg-rgba {
+  background-color:rgba(255,255,255,0.9);
+}
+.bg-rgba:nth-child(1)
+{
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+}
+.bg-rgba:nth-child(3)
+{
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+/* .concept-picture img { */
+  /* background: rgba(255,255,255,.9); */
+/* } */
 @media (max-width: 767px) {
   .feature {
     max-width: 340px;
@@ -465,6 +497,14 @@ img {
 /*=================================================================
 # products
 =================================================================*/
+#product {
+    background:url(/img/suqute/bg2.png);
+    min-height: 100vh;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    transition: all 0.5s ease 0s;
+}
 .products {
   max-width: 940px;
 }
@@ -751,7 +791,7 @@ img {
 }
 
 .contact .util-title {
-  color: #3ea1d1;
+  color: #81d5ff;
 }
 
 .contact input[type='text'],
@@ -906,7 +946,7 @@ img {
 }
 
 .contact-radio-input:checked + .contact-radio-part {
-  background-color: #3ea1d1;
+  background-color: #81d5ff;
   color: #fff;
   border-radius: 1px;
 }
@@ -918,7 +958,7 @@ img {
 .contact-radio-part {
   display: block;
   background: #fff;
-  color: #3ea1d1;
+  color: #81d5ff;
   height: 38px;
   line-height: 38px;
   width: 80px;
@@ -976,7 +1016,7 @@ img {
   display: inline-block;
   height: 22px;
   width: 22px;
-  border: solid 1px #3ea1d1;
+  border: solid 1px #81d5ff;
   background: #fff;
   position: absolute;
   top: 0;
@@ -986,7 +1026,7 @@ img {
 }
 
 .contact-privacy-link {
-  color: #3ea1d1;
+  color: #81d5ff;
   text-decoration: underline;
 }
 
@@ -1095,7 +1135,7 @@ img {
 }
 
 .footer-sns-link {
-  color: #3ea1d1;
+  color: #81d5ff;
   font-size: 24px;
   display: block;
   padding: 0.1em 0.5em;
@@ -1123,4 +1163,3 @@ img {
     margin-top: 5px;
   }
 }
-/*# sourceMappingURL=style.css.map */
