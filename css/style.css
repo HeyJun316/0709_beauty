@@ -224,8 +224,8 @@ img {
 
 @media (min-width: 768px) {
   .top-picture {
-    padding-top: 55%;
-    background: url(../img/suqute/mainvisual.png) no-repeat top right/82.5%;
+    padding-top: 83%;
+    background: url(../img/suqute/mainvisual.png) no-repeat top right/contain;
   }
 }
 
@@ -287,14 +287,43 @@ img {
   }
 }
 
-/* .about-img {
-  width: 100px;
-} */
+.ourConcept-img {
+  width: 80%;
+}
 
-@media (min-width: 768px) {
-  /* .concept-picture {
-    width: 30vw;
-  } */
+@media (max-width: 767px) {
+  .ourConcept-img {
+    width: 100%;
+  }
+}
+
+.voice-img {
+  width: 80%;
+}
+
+@media (max-width: 767px) {
+  .voice-img {
+    width: 100%;
+  }
+}
+
+.concept-picture {
+  text-align: center;
+}
+
+@media (min-width: 767px) {
+  .aboutSqute-inner {
+    max-width: 1200px;
+  }
+  .about-img {
+    width: 33.33%;
+  }
+  .products {
+    margin-bottom: 50px;
+  }
+  .products-img {
+    width: 80%;
+  }
 }
 
 @media (min-width: 768px) {
@@ -1125,5 +1154,9 @@ img {
   .footer-copyright {
     margin-top: 5px;
   }
+}
+
+.block {
+  display: block;
 }
 /*# sourceMappingURL=style.css.map */
