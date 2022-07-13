@@ -46,6 +46,7 @@ img {
   left: 0;
   right: 0;
   z-index: 100;
+  box-shadow: 0px 3px 6px #6a6a7929;
 }
 
 .drawer--right .header .drawer-hamburger {
@@ -286,12 +287,14 @@ img {
   }
 }
 
+/* .about-img {
+  width: 100px;
+} */
+
 @media (min-width: 768px) {
-  .concept-picture {
-    -webkit-box-flex: 0;
-    -ms-flex: 0 0 50%;
-    flex: 0 0 50%;
-  }
+  /* .concept-picture {
+    width: 30vw;
+  } */
 }
 
 @media (min-width: 768px) {
