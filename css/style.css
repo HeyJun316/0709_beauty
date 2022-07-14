@@ -35,7 +35,9 @@ img {
     padding: 15px 10px;
   }
 }
-
+.mt-30 {
+  margin-top: 30px;
+}
 .mb-10 {
   margin-bottom: 10px;
 }
@@ -213,6 +215,12 @@ img {
 }
 
 @media (min-width: 768px) {
+  .youtube {
+    margin: 30px 0;
+  }
+  .util-title {
+    margin-top: 40px;
+  }
   .util-link:not(.-submit):hover {
     background-color: #81d5ff;
     color: #fff;
@@ -220,6 +228,9 @@ img {
 }
 
 @media (max-width: 767px) {
+  .youtube {
+    margin-top: 20px;
+  }
   .util-title {
     font-size: 30px;
   }
@@ -243,8 +254,9 @@ img {
 
 @media (min-width: 768px) {
   .top-picture {
-    padding-top: 55%;
-    background: url(../img/squte/mainvisual.png) no-repeat top right/82.5%;
+    padding-top:60%;
+    background: url(../img/squte/mainvisual.png) no-repeat top /60%;
+    width: 100%;
   }
 
   /* .top-message {
@@ -287,18 +299,16 @@ img {
 
 @media (min-width: 768px) {
   .concept-inner {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
+    width: 60%;
+    margin: 0 auto;
   }
 
   .concept-picture {
-    -webkit-box-flex: 0;
-    -ms-flex: 0 0 50%;
-    flex: 0 0 50%;
+    text-align: center;
+  }
+
+  .concept-picture img {
+    width: 70%;
   }
   .concept-message {
     -webkit-box-flex: 0;
@@ -430,7 +440,7 @@ img {
 }
 
 .products-list {
-  margin-top: 64px;
+  margin: 44px 0 60px 0;
 }
 
 .product-detail {
@@ -532,7 +542,7 @@ img {
   color: #81d5ff;
 }
 
-.contact input[type='text'],
+/* .contact input[type='text'],
 .contact input[type='email'],
 .contact textarea {
   width: 100%;
@@ -542,20 +552,20 @@ img {
   border-radius: 2px;
   -webkit-box-shadow: 5px 6px 15px rgba(96, 96, 96, 0.16);
   box-shadow: 5px 6px 15px rgba(96, 96, 96, 0.16);
-}
+} */
 
-.contact input[type='text'],
+/* .contact input[type='text'],
 .contact input[type='email'] {
   height: 40px;
-}
+} */
 
-.contact textarea {
+/* .contact textarea {
   min-height: 122px;
   resize: vertical;
-}
+} */
 
 .contact-form {
-  margin-top: 56px;
+  margin: 56px 0;
 }
 
 @media (max-width: 767px) {
@@ -711,6 +721,9 @@ img {
   color: #f00;
 }
 @media (min-width: 768px) {
+  .contact {
+    padding: 30px;
+  }
   .contact-item-title {
     -webkit-box-flex: 0;
     -ms-flex: 0 1 100%;
@@ -721,6 +734,9 @@ img {
     -ms-flex: 0 0 320px;
     flex: 0 0 320px;
     margin-left: 18px;
+  }
+  .contact-footer-submit {
+    margin-bottom: 20px;
   }
 }
 
