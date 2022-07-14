@@ -35,8 +35,8 @@ img {
     padding: 15px 10px;
   }
 }
-.mt-30 {
-  margin-top: 30px;
+.mt-40 {
+  margin-top: 40px;
 }
 .mb-10 {
   margin-bottom: 10px;
@@ -216,10 +216,10 @@ img {
 
 @media (min-width: 768px) {
   .youtube {
-    margin: 30px 0;
+    margin: 40px 0;
   }
   .util-title {
-    margin-top: 40px;
+    margin: 40px 30px;
   }
   .util-link:not(.-submit):hover {
     background-color: #81d5ff;
@@ -308,7 +308,7 @@ img {
   }
 
   .concept-picture img {
-    width: 70%;
+    width: 85%;
   }
   .concept-message {
     -webkit-box-flex: 0;
@@ -418,7 +418,7 @@ img {
 /*=================================================================
 # products
 =================================================================*/
-#product {
+#products {
   background: url(/img/squte/bg2.png);
   min-height: 100vh;
   background-attachment: fixed;
@@ -474,6 +474,10 @@ img {
   .op-07 {
     opacity: 0.7;
     background-color: rgba(255, 255, 255, 0.7);
+  }
+
+  .pic-smaller2 img{
+    width: 70%;
   }
 }
 

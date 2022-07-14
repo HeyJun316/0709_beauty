@@ -38,12 +38,14 @@
             <a class="header-nav-item-link" href="#concept">Concept</a>
           </li>
           <li class=header-nav-item>
-            <a class="header-nav-item-link" href="#feature">Voice</a>
+            <a class="header-nav-item-link" href="#voice">Voice</a>
           </li>
+          <li class=header-nav-item>
+            <a class="header-nav-item-link" href="#feature">SQUTE</a></li>
           <li class=header-nav-item>
             <a class="header-nav-item-link" href="#products">Products</a></li>
           <li class=header-nav-item>
-            <a class="header-nav-item-link" href="#Dealer">Dealer</a>
+            <a class="header-nav-item-link" href="#dealers">Dealers</a>
           </li>
           <li class=header-nav-item>
             <a class="header-nav-item-link" href="#contact">Contact</a>
@@ -79,7 +81,14 @@
     <section id="voice" class="concept inner section wow fadeInUp mb-25">
       <h2 class="util-title wow fadeInUp">Voice</h2>
       <div class="concept-inner">
-        <div class="concept-picture wow fadeInUp">
+        <!-- PC版のみ -->
+        <div class="is-pc concept-picture wow fadeInUp">
+          <img src="./img/squte/voice_left.png" style="margin-bottom: 20px;">
+          <img src="./img/squte/voice_right.png" style="margin-bottom: 5px;">
+        </div>
+        <!-- /PC版のみ -->
+        <!-- SP版のみ -->
+        <div class="is-sp concept-picture wow fadeInUp">
           <div style="width: 100px; height: auto; margin: 0 auto;">
             <img src="./img/squte/voice1_hu.png" style="margin-bottom: 5px;">
           </div>
@@ -89,16 +98,20 @@
           </div>
           <img src="./img/squte/-voice2.png" style="margin-bottom: 5px;">
         </div>
+        <!-- /SP版のみ -->
+        <div class="youtube">
           <iframe width="100%" height="315" src="https://www.youtube.com/embed/SYWWr0_OJow" title="YouTube video player"
             frameborder="0" class="youtube wow fadeInUp"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowfullscreen></iframe>
+        </div>
+
     </section>
     <!-- /.voice -->
     <!-- .concept-> About-->
     <section id="feature" class="concept inner section wow fadeInUp p-top-main ">
       <div class="bg-container">
-        <h2 class="util-title wow fadeInUp">About SQUTE</h2>
+        <h2 class="util-title wow fadeInUp">SQUTE</h2>
         <div class="concept-inner wow fadeInUp bg-rgba">
           <div class="concept-picture">
             <img src="./img/squte/new_merit_text.png">
@@ -116,7 +129,7 @@
 
     <!-- /.concept -> about -->
     <!-- .concept -> products -->
-    <section id="product" class="wow concept inner wow fadeInUp section p-top-main ">
+    <section id="products" class="wow concept inner wow fadeInUp section p-top-main ">
       <h2 class="util-title wow fadeInUp">Products</h2>
       <div class="concept-inner wow fadeInUp bg-rgba"">
         <div class=" concept-picture wow fadeInUp">
@@ -131,21 +144,21 @@
       </div>
       <div class="concept-picture wow fadeInUp">
         <img src="./img/squte/new_squte_01.png">
-        <div class="p-10">
+        <div class="p-10 pic-smaller2">
           <img src="./img/squte/squte_01_detail1.png">
           <img src="./img/squte/squte_01_detail2.png">
         </div>
       </div>
       <div class="concept-picture wow fadeInUp">
         <img src="./img/squte/new_squte_02.png">
-        <div class="p-10">
+        <div class="p-10 pic-smaller2">
           <img src="./img/squte/squte_02_detail1.png">
           <img src="./img/squte/squte_02_detail2.png">
         </div>
       </div>
       <div class="concept-picture wow fadeInUp">
-        <img src="./img/squte/new_squte_+1.png">
-        <div class="p-10">
+        <img class="pic-width" src="./img/squte/new_squte_+1.png">
+        <div class="p-10 pic-smaller2">
           <img src="./img/squte/squte_+1_detail1.png">
           <img src="./img/squte/squte_+1_detail2.png">
         </div>
@@ -160,21 +173,15 @@
         <ul class=" products-list p-30">
           <!-- 1個目 -->
           <li class="products-item wow fadeInUp">
-            <a href="#" class="products-item-link">
               <div class="products-item-picture pic-smaller"><img src="./img/squte/dealer1.png"></div>
-            </a>
           </li>
           <!-- ２個目 -->
           <li class="products-item wow fadeInUp">
-            <a href="#" class="products-item-link">
               <div class="products-item-picture pic-smaller"><img src="./img/squte/dealer2.png"></div>
-            </a>
           </li>
           <!-- 3個目 -->
           <li class="products-item wow fadeInUp">
-            <a href="#" class="products-item-link">
-              <div class="products-item-picture"><img src="./img/squte/dealer3.png"></div>
-            </a>
+              <div class="products-item-picture mt-40"><img src="./img/squte/dealer3.png"></div>
           </li>
         </ul>
       </div>
