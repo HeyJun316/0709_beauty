@@ -73,6 +73,7 @@ img {
   left: 0;
   right: 0;
   z-index: 100;
+  box-shadow: 0px 3px 6px #6a6a7929;
 }
 
 .drawer--right .header .drawer-hamburger {
@@ -232,9 +233,11 @@ img {
   position: relative;
 }
 
-.top-message-title {
-  font-size: 26px;
-  font-weight: bold;
+@media (min-width: 768px) {
+  .top-picture {
+    padding-top: 83%;
+    background: url(../img/suqute/mainvisual.png) no-repeat top right/contain;
+  }
 }
 
 /* .top-message-text { */
@@ -295,10 +298,42 @@ img {
     align-items: center;
   }
 
-  .concept-picture {
-    -webkit-box-flex: 0;
-    -ms-flex: 0 0 50%;
-    flex: 0 0 50%;
+.ourConcept-img {
+  width: 80%;
+}
+
+@media (max-width: 767px) {
+  .ourConcept-img {
+    width: 100%;
+  }
+}
+
+.voice-img {
+  width: 80%;
+}
+
+@media (max-width: 767px) {
+  .voice-img {
+    width: 100%;
+  }
+}
+
+.concept-picture {
+  text-align: center;
+}
+
+@media (min-width: 767px) {
+  .aboutSqute-inner {
+    max-width: 1200px;
+  }
+  .about-img {
+    width: 33.33%;
+  }
+  .products {
+    margin-bottom: 50px;
+  }
+  .products-img {
+    width: 80%;
   }
   .concept-message {
     -webkit-box-flex: 0;
@@ -876,9 +911,6 @@ img {
   }
 }
 
-/*=================================================================
-# about
-=================================================================*/
 .about {
   color: #fff;
   position: relative;
@@ -1106,3 +1138,8 @@ img {
     font-size: 14px;
   }
 }
+=======
+.block {
+  display: block;
+}
+/*# sourceMappingURL=style.css.map */
