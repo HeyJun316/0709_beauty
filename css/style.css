@@ -237,16 +237,17 @@ img {
   font-weight: bold;
 }
 
-.top-message-text {
-  margin-top: 18px;
-}
+/* .top-message-text { */
+/* margin-top: 18px; */
+/* } */
 
 @media (min-width: 768px) {
   .top-picture {
     padding-top: 55%;
     background: url(../img/squte/mainvisual.png) no-repeat top right/82.5%;
   }
-  .top-message {
+
+  /* .top-message {
     position: absolute;
     left: 0;
     top: 50%;
@@ -254,7 +255,7 @@ img {
     transform: translateY(-50%);
     background: #fff;
     padding: 82px 44px 90px 0;
-  }
+  } */
 }
 
 @media (max-width: 767px) {
@@ -262,9 +263,9 @@ img {
     padding-top: 100%;
     background: url(../img/squte/mainvisual.png) no-repeat center center/contain;
   }
-  .top-message {
+  /* .top-message {
     margin-top: 31px;
-  }
+  } */
 }
 
 /*=================================================================
@@ -275,14 +276,14 @@ img {
   border-radius: 40px;
 }
 
-.concept-message-title {
+/* .concept-message-title {
   font-size: 20px;
   font-weight: bold;
-}
+} */
 
-.concept-message-text {
+/* .concept-message-text {
   margin-top: 36px;
-}
+} */
 
 @media (min-width: 768px) {
   .concept-inner {
@@ -329,10 +330,6 @@ img {
   transition: all 0.5s ease 0s;
 }
 
-.concept-picture img {
-  /* width: 400px; */
-  /* height: 400px; */
-}
 /* ★nth-chile まとめ方調べる*/
 .bg-rgba {
   background-color: rgba(255, 255, 255, 0.9);
@@ -407,10 +404,6 @@ img {
     margin: 0 auto;
   }
 }
-
-/* .concept-picture img { */
-/* background: rgba(255,255,255,.9); */
-/* } */
 
 /*=================================================================
 # products
@@ -524,7 +517,7 @@ img {
 }
 
 /*=================================================================
-# contact
+# contact ほぼ使ってない
 =================================================================*/
 #contact {
   /* background: url(/img/squte/bg6.png); */
@@ -706,11 +699,6 @@ img {
 .contact-privacy-link {
   color: #81d5ff;
   text-decoration: underline;
-}
-
-.contact-footer-submit {
-  /* margin-top: 46px; */
-  /* margin: 0 auto; */
 }
 
 .contact-message {
