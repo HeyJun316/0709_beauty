@@ -23,6 +23,7 @@ img {
 }
 
 .inner {
+  width: 100%;
   max-width: 1200px;
   margin: 0 auto;
   -webkit-box-sizing: content-box;
@@ -30,9 +31,41 @@ img {
   padding: 0 40px;
 }
 
+.inner .bg-scroll {
+  display: block;
+  position: sticky;
+  top: 0;
+  z-index: -1;
+  height: 0;
+  max-height: 0;
+  overflow: visible;
+  padding-top: 50px;
+}
+
+.inner .bg-scroll::before {
+  content: "";
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-background-size: contain;
+  background-size: cover;
+}
+
 @media (max-width: 767px) {
   .inner {
-    padding: 15px 25px;
+    /* padding: 15px 25px; */
+
+    padding: 0;
+
+  }
+
+  .inner h2+div {
+    margin: 0 25px;
   }
 }
 .mt-40 {
@@ -68,6 +101,8 @@ img {
 
 .p-top-main {
   padding: 50px 25px;
+
+  padding: 0 0 50px;
 }
 
 /*=================================================================
@@ -256,7 +291,7 @@ img {
   }
 
   .youtube-warpper-center {
-    margin: 30px auto;  /* 中央に配置 */
+    margin: 30px auto !important;  /* 中央に配置 */
     max-width: 300px;
   }
 
@@ -293,45 +328,64 @@ img {
 }
 
 #feature {
-  background: url(/img/squte/bg_h2.jpg);
-  min-height: 60vh;
+  /* background: url(../img/squte/bg_h2.jpg); */
+  /* min-height: 60vh;
   background-attachment: fixed;
   background-size: cover;
   background-position: center;
-  transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s; */
 }
 
+#feature .bg-scroll::before {
+  background-image: url(../img/squte/bg_h2.jpg);
+}
 
 #products {
-  background: url(/img/squte/bg_h3.jpg);
-  min-height: 100vh;
+  /* background: url(../img/squte/bg_h3.jpg); */
+  /* min-height: 100vh;
   width: 100%;
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: contain;
   -webkit-background-size: cover;
   background-position: center;
-  transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s; */
+}
+
+#products .bg-scroll::before {
+  background-image: url(../img/squte/bg_h3.jpg);
 }
 
 #voice {
-  background: url(/img/squte/bg_h1.jpg);
-  min-height: 100vh;
+  /* background: url(../img/squte/bg_h1.jpg); */
+  /* min-height: 100vh;
   background-attachment: fixed;
   background-size: cover;
   background-position: center;
-  transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s; */
+}
+
+#voice .concept-picture {
+  margin: 0 25px;
+}
+
+#voice .bg-scroll::before {
+  background-image: url(../img/squte/bg_h1.jpg);
 }
 
 #dealers {
-  background: url(/img/squte/bg_h4.png);
-  min-height: 0vh;
+  /* background: url(../img/squte/bg_h4.png); */
+  /* min-height: 0vh;
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
   -webkit-background-size: cover;
   background-position: center;
-  transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s; */
+}
+
+#dealers .bg-scroll::before {
+  background-image: url(../img/squte/bg_h4.png);
 }
 /*=================================================================
 # concept
@@ -367,6 +421,11 @@ img {
 }
 
 @media (max-width: 767px) {
+  #concept {
+    padding: 40px 0 0 0;
+    background: #ffffff;
+  }
+
   .concept-message {
     margin-top: 35px;
   }
@@ -463,6 +522,7 @@ img {
 
 .dealers-list {
   margin: 44px 0;
+  margin: 0;
 }
 
 .product-detail {
@@ -533,6 +593,8 @@ img {
   background-size: cover;
   background-position: center;
   transition: all 0.5s ease 0s;
+  background-color: #ffffff;
+  background-image: none;
 }
 
 .contact .util-title {
