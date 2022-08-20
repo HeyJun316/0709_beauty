@@ -23,7 +23,7 @@ img {
 }
 
 .inner {
-  width: 100%;
+  /* width: 100%; */
   max-width: 1200px;
   margin: 0 auto;
   -webkit-box-sizing: content-box;
@@ -58,16 +58,20 @@ img {
 
 @media (max-width: 767px) {
   .inner {
-    /* padding: 15px 25px; */
-
     padding: 0;
-
   }
-
   .inner h2+div {
     margin: 0 25px;
   }
 }
+
+/*=================================================================
+# まとめ
+=================================================================*/
+.mtb-25 {
+  margin: 25px 0;
+}
+
 .mt-40 {
   margin-top: 40px;
 }
@@ -91,20 +95,33 @@ img {
   padding: 10px;
 }
 
-.p-30 {
-  padding: 30px;
+.pt-40{
+  padding-top: 40px;
 }
 
+.pb-80{
+  padding-bottom: 80px;
+}
 .header-padding {
   padding: 5px 10px;
 }
 
 .p-top-main {
   padding: 50px 25px;
-
   padding: 0 0 50px;
 }
 
+.p-left-right-35{
+  padding: 0 35px;
+}
+
+.wid-60 {
+  width: 60%;
+}
+
+.text-align-center {
+  text-align: center;
+}
 /*=================================================================
 # header
 =================================================================*/
@@ -300,6 +317,25 @@ img {
   }
 }
 
+span {
+  display: inline-block;
+}
+
+.voice-font {
+  font-family: "Hiragino Sans";
+  font-weight: 400;
+}
+
+.voice-font-detail-top {
+  font-size: 18px;
+  line-height: 27px;
+  margin-bottom: 20px;
+}
+
+.voice-font-detail-second {
+  font-size: 12px;
+  line-height: 20px;
+}
 /*=================================================================
 # top
 =================================================================*/
@@ -315,78 +351,40 @@ img {
 @media (min-width: 768px) {
   .top-picture {
     padding-top:60%;
-    background: url(../img/squte/mainvisual.png) no-repeat top /60%;
+    background: url(../img/mainvisual.png) no-repeat top /60%;
     width: 100%;
   }
- }
+}
 
 @media (max-width: 767px) {
   .top-picture {
     padding-top: 100%;
-    background: url(../img/squte/mainvisual.png) no-repeat center center/contain;
+    background: url(../img/mainvisual.png) no-repeat center center/contain;
+  }
+
+  #voice .concept-picture {
+    margin: 0 25px;
   }
 }
 
-#feature {
-  /* background: url(../img/squte/bg_h2.jpg); */
-  /* min-height: 60vh;
-  background-attachment: fixed;
-  background-size: cover;
-  background-position: center;
-  transition: all 0.5s ease 0s; */
-}
-
 #feature .bg-scroll::before {
-  background-image: url(../img/squte/bg_h2.jpg);
-}
-
-#products {
-  /* background: url(../img/squte/bg_h3.jpg); */
-  /* min-height: 100vh;
-  width: 100%;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-size: contain;
-  -webkit-background-size: cover;
-  background-position: center;
-  transition: all 0.5s ease 0s; */
+  background-image: url(../img/bg2.jpg);
 }
 
 #products .bg-scroll::before {
-  background-image: url(../img/squte/bg_h3.jpg);
+  background-image: url(../img/bg3.jpg);
 }
 
-#voice {
-  /* background: url(../img/squte/bg_h1.jpg); */
-  /* min-height: 100vh;
-  background-attachment: fixed;
-  background-size: cover;
-  background-position: center;
-  transition: all 0.5s ease 0s; */
-}
-
-#voice .concept-picture {
-  margin: 0 25px;
-}
 
 #voice .bg-scroll::before {
-  background-image: url(../img/squte/bg_h1.jpg);
-}
-
-#dealers {
-  /* background: url(../img/squte/bg_h4.png); */
-  /* min-height: 0vh;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-size: cover;
-  -webkit-background-size: cover;
-  background-position: center;
-  transition: all 0.5s ease 0s; */
+  background-image: url(../img/bg1.jpg);
 }
 
 #dealers .bg-scroll::before {
-  background-image: url(../img/squte/bg_h4.png);
+  background-image: url(../img/bg4.png);
 }
+
+
 /*=================================================================
 # concept
 =================================================================*/
@@ -523,6 +521,7 @@ img {
 .dealers-list {
   margin: 44px 0;
   margin: 0;
+  padding: 45px 30px 30px 30px;
 }
 
 .product-detail {
@@ -585,7 +584,7 @@ img {
 
 
 /*=================================================================
-# contact ほぼ使ってない
+# contact
 =================================================================*/
 #contact {
   min-height: 20vh;
@@ -601,21 +600,9 @@ img {
   color: #81d5ff;
 }
 
-
-@media (max-width: 767px) {
-  .contact-form {
-    margin-top: 26px;
-  }
-}
-
 .contact-list {
   max-width: 510px;
   margin: 18px auto 0;
-}
-
-.contact-footer {
-  text-align: center;
-  margin-top: 20px;
 }
 
 @media (min-width: 768px) {
@@ -628,24 +615,19 @@ img {
 }
 
 @media (max-width: 767px) {
+  .contact-form {
+    margin-top: 26px;
+  }
   .contact {
     padding: 56px 28px;
-  }
-
-  .contact-footer {
-    margin-top: 14px;
   }
 
   .contact-footer-submit {
     margin-top: 24px;
     text-align: center;
   }
-
-  .line-link {
-    font-size: 60px;
-    color: rgb(6, 199, 85);
-  }
 }
+
 
 /*=================================================================
 # footer

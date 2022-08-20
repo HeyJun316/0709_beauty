@@ -21,29 +21,6 @@ $(document).ready(function () {
   // wow js
   new WOW().init();
 
-  // google form
-  let $form = $('#js-form');
-  $form.submit(function (e) {
-    $.ajax({
-      url: $form.attr('action'),
-      data: $form.serialize(),
-      type: 'POST',
-      dataType: 'xml',
-      statusCode: {
-        0: function () {
-          //送信に成功したときの処理
-          $form.slideUp();
-          $('#js-success').slideDown();
-        },
-        200: function () {
-          //送信に失敗したときの処理
-          $form.slideUp();
-          $('#js-error').slideDown();
-        },
-      },
-    });
-    return false;
-  });
   $(function () {
     $('#feature').each(function (i, elem) {
       var contentsPOS = $(elem).offset().top;
@@ -51,7 +28,7 @@ $(document).ready(function () {
         var winHeight = $(window).height();
         var scrollTop = $(window).scrollTop();
         var showClass = 'show';
-        var timing = 250; // 250pxコンテンツが見えたら次のif文がtrue
+        var timing = 200; // 250pxコンテンツが見えたら次のif文がtrue
         if (scrollTop >= contentsPOS - winHeight + timing) {
           $(elem).addClass(showClass);
         } else {
